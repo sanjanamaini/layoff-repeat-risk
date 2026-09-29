@@ -1,0 +1,18 @@
+# Raw layoffs.fyi data and anything that contains it in full (see README, decision 0002)
+layoffs_global_12mo.csv
+sql/layoffs.db
+sql/exports/events_with_rounds.csv
+sql/exports/company_lookup.csv
+*.pbix
+
+# Abandoned NewsAPI approach (script contains an API key)
+layoffs_collector.py
+raw_articles.csv
+
+# Not used in this phase
+ibm_hr_employee_attrition.csv
+
+# Internal notes and build artifacts
+docs/README-todo.md
+__pycache__/
+*.pyc

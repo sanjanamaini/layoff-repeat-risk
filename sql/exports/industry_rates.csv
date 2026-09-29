@@ -1,0 +1,29 @@
+industry,eligible_companies,cut_again_within_6m,pct_cut_again,sample_note
+ALL INDUSTRIES,164,17,10.4,
+Consumer,26,5,19.2,
+Finance,20,0,0.0,
+Other,19,1,5.3,
+Retail,10,3,30.0,
+Transportation,8,2,25.0,Too few companies to compare
+HR,7,1,14.3,Too few companies to compare
+Hardware,7,0,0.0,Too few companies to compare
+Security,7,2,28.6,Too few companies to compare
+Crypto,6,0,0.0,Too few companies to compare
+Food,6,0,0.0,Too few companies to compare
+AI,5,0,0.0,Too few companies to compare
+Data,5,1,20.0,Too few companies to compare
+Sales,5,1,20.0,Too few companies to compare
+Education,4,0,0.0,Too few companies to compare
+Manufacturing,4,1,25.0,Too few companies to compare
+Marketing,4,0,0.0,Too few companies to compare
+Travel,4,0,0.0,Too few companies to compare
+Healthcare,3,0,0.0,Too few companies to compare
+Energy,2,0,0.0,Too few companies to compare
+Fitness,2,0,0.0,Too few companies to compare
+Logistics,2,0,0.0,Too few companies to compare
+Recruiting,2,0,0.0,Too few companies to compare
+Support,2,0,0.0,Too few companies to compare
+Legal,1,0,0.0,Too few companies to compare
+Media,1,0,0.0,Too few companies to compare
+Product,1,0,0.0,Too few companies to compare
+Real Estate,1,0,0.0,Too few companies to compare
