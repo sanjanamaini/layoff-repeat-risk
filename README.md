@@ -37,6 +37,19 @@ these people can get from the company itself.
 - The 3/6/9-month rows use different groups of companies (fewer can be followed for longer), so
   the rise from 4% to 24% mixes more time with a different set of companies.
 
+## v2: the same question as a survival analysis
+
+[`notebooks/repeat_risk.ipynb`](notebooks/repeat_risk.ipynb) keeps every rule above (14-day rounds, name merges) and reproduces queries 04 and 07 exactly in Python, then goes further. Outputs are aggregates only; the raw data stays private.
+
+- **Closed companies can't cut again.** 12 of the 164 companies in the headline laid off 100% of staff in their first round. Among companies still operating, **17 of 152 (11.2%) cut again within 6 months**, with a 95% interval of **7.1% to 17.2%**. "About 1 in 10" is the right precision.
+- **One curve from every company.** A Kaplan-Meier estimate follows all 330 operating companies until their second round or the end of the data, instead of only those old enough for a fixed window. It gives 4.8% by 3 months, **10.2% by 6 months** (6.9% to 14.8%) and 18.9% by 9 months. The fixed-window 24.4% at 9 months came from the 90 earliest companies only.
+- **The risk doesn't fade.** After the first month (near zero by construction of the 14-day rule), roughly 1.5% to 3% of companies that have not yet cut again do so each month, through month 10.
+- **The round rule is not driving anything.** The 6-month estimate is 10.2% at 7 and 14 days and 9.9% at 30. Only 60 and 90 days lower it, by merging real second rounds.
+- **Who repeats?** Companies whose first cut was under 10% of staff repeated most often (16.3% by 6 months, against 6.0% and 4.0% after deeper cuts), but the evidence is weak (p = 0.08). Headcount and US location show no detectable effect in a Cox model.
+- **Industries, shrunk toward the overall rate** with a beta-binomial model: Retail's 3 of 9 becomes 15.6%, Finance's 0 of 18 becomes 6.9%. The differences are mostly sample size.
+
+![Repeat layoffs, survival curve](results/figures/km_repeat.png)
+
 ## How it's built
 
 ```

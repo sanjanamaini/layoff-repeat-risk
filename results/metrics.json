@@ -1,0 +1,255 @@
+{
+ "events": 442,
+ "companies": 373,
+ "repeat_companies": 39,
+ "missing_count": 150,
+ "missing_pct": 204,
+ "v1_curve": [
+  {
+   "months": 3,
+   "eligible": 276,
+   "cut_again": 11,
+   "share": 0.03985507246376811
+  },
+  {
+   "months": 6,
+   "eligible": 164,
+   "cut_again": 17,
+   "share": 0.10365853658536585
+  },
+  {
+   "months": 9,
+   "eligible": 90,
+   "cut_again": 22,
+   "share": 0.24444444444444444
+  }
+ ],
+ "sql_headline": [
+  164,
+  17,
+  10.4
+ ],
+ "closures_in_v1_denominator": 12,
+ "closures_cut_again": 0,
+ "headline_v1": 0.10365853658536585,
+ "headline_v1_ci": [
+  0.06573150818853768,
+  0.1597280361134476
+ ],
+ "headline_open": 0.1118421052631579,
+ "headline_open_k": 17,
+ "headline_open_n": 152,
+ "headline_open_ci": [
+  0.0710107577303746,
+  0.17180947192515766
+ ],
+ "km_companies": 330,
+ "km_events": 39,
+ "km": {
+  "90": {
+   "cut_again": 0.048413638676973014,
+   "lo": 0.028924766459441753,
+   "hi": 0.08047827471998725,
+   "at_risk": 246
+  },
+  "180": {
+   "cut_again": 0.10154595891660645,
+   "lo": 0.06910758091621738,
+   "hi": 0.1479539892421683,
+   "at_risk": 135
+  },
+  "270": {
+   "cut_again": 0.18907995159984947,
+   "lo": 0.13420922333603214,
+   "hi": 0.2627336709211413,
+   "at_risk": 60
+  }
+ },
+ "monthly_hazard": [
+  {
+   "month": 1,
+   "at_risk": 329,
+   "second_rounds": 1,
+   "hazard": 0.003
+  },
+  {
+   "month": 2,
+   "at_risk": 311,
+   "second_rounds": 9,
+   "hazard": 0.0289
+  },
+  {
+   "month": 3,
+   "at_risk": 278,
+   "second_rounds": 4,
+   "hazard": 0.0144
+  },
+  {
+   "month": 4,
+   "at_risk": 242,
+   "second_rounds": 4,
+   "hazard": 0.0165
+  },
+  {
+   "month": 5,
+   "at_risk": 207,
+   "second_rounds": 6,
+   "hazard": 0.029
+  },
+  {
+   "month": 6,
+   "at_risk": 163,
+   "second_rounds": 3,
+   "hazard": 0.0184
+  },
+  {
+   "month": 7,
+   "at_risk": 130,
+   "second_rounds": 3,
+   "hazard": 0.0231
+  },
+  {
+   "month": 8,
+   "at_risk": 99,
+   "second_rounds": 3,
+   "hazard": 0.0303
+  },
+  {
+   "month": 9,
+   "at_risk": 75,
+   "second_rounds": 2,
+   "hazard": 0.0267
+  },
+  {
+   "month": 10,
+   "at_risk": 59,
+   "second_rounds": 3,
+   "hazard": 0.0508
+  },
+  {
+   "month": 11,
+   "at_risk": 39,
+   "second_rounds": 1,
+   "hazard": 0.0256
+  },
+  {
+   "month": 12,
+   "at_risk": 21,
+   "second_rounds": 0,
+   "hazard": 0.0
+  }
+ ],
+ "merge_sensitivity": [
+  {
+   "merge_days": 7,
+   "companies_with_2plus_rounds": 39,
+   "fixed_window_6m": 0.1118,
+   "km_6m": 0.1015
+  },
+  {
+   "merge_days": 14,
+   "companies_with_2plus_rounds": 39,
+   "fixed_window_6m": 0.1118,
+   "km_6m": 0.1015
+  },
+  {
+   "merge_days": 30,
+   "companies_with_2plus_rounds": 38,
+   "fixed_window_6m": 0.1118,
+   "km_6m": 0.0986
+  },
+  {
+   "merge_days": 60,
+   "companies_with_2plus_rounds": 32,
+   "fixed_window_6m": 0.0855,
+   "km_6m": 0.0745
+  },
+  {
+   "merge_days": 90,
+   "companies_with_2plus_rounds": 28,
+   "fixed_window_6m": 0.0724,
+   "km_6m": 0.0594
+  }
+ ],
+ "by_first_cut": [
+  {
+   "first_cut": "under 10%",
+   "companies": 68,
+   "second_rounds": 12,
+   "km_6m": 0.1632
+  },
+  {
+   "first_cut": "10-25%",
+   "companies": 68,
+   "second_rounds": 5,
+   "km_6m": 0.0599
+  },
+  {
+   "first_cut": "25-99%",
+   "companies": 35,
+   "second_rounds": 1,
+   "km_6m": 0.04
+  },
+  {
+   "first_cut": "not reported",
+   "companies": 159,
+   "second_rounds": 21,
+   "km_6m": 0.1045
+  }
+ ],
+ "first_cut_logrank_p": 0.08380852555132391,
+ "cox": {
+  "log_count": {
+   "exp(coef)": 1.041,
+   "exp(coef) lower 95%": 0.7941,
+   "exp(coef) upper 95%": 1.3645,
+   "p": 0.7712
+  },
+  "count_known": {
+   "exp(coef)": 1.5941,
+   "exp(coef) lower 95%": 0.6979,
+   "exp(coef) upper 95%": 3.6414,
+   "p": 0.2685
+  },
+  "us": {
+   "exp(coef)": 1.2436,
+   "exp(coef) lower 95%": 0.6542,
+   "exp(coef) upper 95%": 2.3641,
+   "p": 0.5059
+  }
+ },
+ "bb_prior_mean": 0.10746246480220828,
+ "bb_prior_strength": 32.65520910254676,
+ "industries": {
+  "Retail": {
+   "n": 9,
+   "k": 3,
+   "raw": 0.3333,
+   "shrunk": 0.1563
+  },
+  "Transportation": {
+   "n": 8,
+   "k": 2,
+   "raw": 0.25,
+   "shrunk": 0.1355
+  },
+  "Consumer": {
+   "n": 25,
+   "k": 5,
+   "raw": 0.2,
+   "shrunk": 0.1476
+  },
+  "Other": {
+   "n": 16,
+   "k": 1,
+   "raw": 0.0625,
+   "shrunk": 0.0927
+  },
+  "Finance": {
+   "n": 18,
+   "k": 0,
+   "raw": 0.0,
+   "shrunk": 0.0693
+  }
+ }
+}
