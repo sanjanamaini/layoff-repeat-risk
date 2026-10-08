@@ -4,6 +4,15 @@
 442 global layoff announcements from September 2025 to September 2026. SQL analysis in SQLite,
 dashboard in Power BI.
 
+**At a glance**
+
+| | |
+|---|---|
+| **Question** | After a company announces a layoff, does another one follow? |
+| **Data** | 442 layoff announcements, Sep 2025 to Sep 2026 (raw data kept private; this repo holds queries and aggregates) |
+| **Result** | 17 of 164 companies (10.4%) cut again within 6 months; 17 of 152 (11.2%) among companies still operating |
+| **Stack** | SQL (SQLite), Power BI (DAX), Python (Kaplan-Meier) |
+
 ![Dashboard](dashboard.png)
 
 ## Why this question
